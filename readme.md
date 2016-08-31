@@ -1,0 +1,5 @@
+The jupyter notebooks are using word2vec in gensim to classify sentiment of IMDB review(classification.ipynb) and exploring the model of word2vec in gensim(explore_word2vec.ipynb). In explore_word2vec.ipynb, I print the input and the output of the module's built-in function.
+
+To run the notebook, first need to install gensim module. The installation method is on https://radimrehurek.com/gensim/install.html.
+
+What word2vec does is to represent each word as a vector in a form that reflects how close words occur. The closer the words tend to occur in a text the more similar the vectors will be. Word2Vec only allows us to project text words to vectors. So in order to classify a paragraph of text contents, we still need to determine the features of each review. In classification.ipynb, I used an easy method that averaging the word vectors in each review to create features. 
